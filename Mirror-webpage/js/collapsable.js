@@ -20,16 +20,30 @@
             }
         },
         nodeStructure: {
-            image: "img/GnuLinux.png",
+            image: "img/linux.svg",
             collapsable: true,
             collapsed: true,
             children: [
                 {
-                    image: "img/debian-based.png",
+                    image:"img/redhat.svg",
+                    collapsed: true,
+                    children:[{
+                        image: "img/fedora.svg"
+                    },
+                        {
+                            image:"img/centos.png"
+                        }
+                         ]
+                },
+                {
+                    image: "img/debian.svg",
                     collapsed: true,
                     children: [
                         {
-                            image: "img/ubuntu.png",
+                            image:"img/debian.svg"
+                        },
+                        {
+                            image: "img/ubuntu.svg",
                             collapsed:true,
                             collapsable: true,
                             children: [
@@ -40,22 +54,53 @@
                                     }
                                 },
                                 {
-                                    image: "img/unity.jpg"
+                                    image: "img/unity.png"
+                                },
+                                {
+                                    image: "img/xubuntu.png"
+                                },
+                                {
+                                    image: "img/kde.svg"
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    image: "img/archlinux.png",
-                    //childrenDropLevel: 1,
+                    image: "img/archlinux-1.svg",
+                    childrenDropLevel: 1,
                     collapsed: true,
                     children: [
                         {
-                            image: "img/manjaro.png",
+                            image: "img/manjaro.svg",
+                            collapsed:true,
+                            children: [
+                                {
+                                    image:"img/kde.svg",
+                                    link: {
+                                        href: "ISOs/kde.iso",
+                                    }
+                                },
+                                {
+                                    image:"img/i3.png",
+                                    link: {
+                                        href: "ISOs/manjaro-i3.iso"
+                                    }
+                                },
+                                {
+                                    image: "img/gnome.svg",
+                                    link: {
+                                         href: "ISOs/archlinux.iso"
+                                         }
+                                }
+                            ]
                         },
                         {
-                            image: "img/archlinux.png"
+                            image: "img/archlinux.png",
+                            link: {
+                                href: "ISOs/archlinux.iso"
+                            }
+
                         }
                     ]
                 }
