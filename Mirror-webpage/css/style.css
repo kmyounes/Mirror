@@ -70,6 +70,10 @@ body {
 
 }
 
+#theTree {
+    position: center;
+}
+
 #container h1 {
         text-align: center;
 }

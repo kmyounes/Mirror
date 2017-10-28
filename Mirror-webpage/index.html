@@ -5,6 +5,7 @@
         <title>Mirror | OpenMindsClub</title>
         <link rel="icon" type="png" href="img/favicon.png" />
         <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-scrollto.js"></script>
     <link rel="stylesheet" href="css/Treant.css">
     <link rel="stylesheet" href="css/collapsable.css">
 
@@ -20,7 +21,9 @@
                     <a target="_blank" href="http://m.openmindsclub.net/sources.list">Xenial (16.04)</a>
                 </div>
                 <div id="download_source">
+
             <a  onclick="move()">Download ISOs</a>
+
                 </div>
 <center>
                 <div id="instructions">
@@ -100,6 +103,15 @@ function copyToClipboard(elem) {
     }
     return succeed;
 }
+
+function scroll_to_anchor(anchor_id){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top},'slow');
+}
+
+
+
+
 </script>
 
 <div id="tree"></div>
@@ -107,6 +119,9 @@ function copyToClipboard(elem) {
     
     <script src="js/vendor/raphael.js"></script>
     <script src="js/Treant.js"></script>
+
+    <script src="js/vendor/jquery.js"></script>
+
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/jquery.easing.js"></script>
     <script src="js/collapsable.js"></script>
